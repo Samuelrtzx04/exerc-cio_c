@@ -1,286 +1,43 @@
-#include<stdio.h>
-int main () {
-	
-	int num1;
-	
-	printf("\n digite qual dia e hoje \n");
-	scanf("%i", &num1);
-	
-	switch (num1) {
-        case 1:
-            printf("\n segunda \n");
+char operador;
+    float num1, num2, resultado;
+
+    printf("Digite o primeiro operando: ");
+    scanf("%f", &num1);
+
+    printf("Digite o operador (+, -, *, /): ");
+    scanf(" %c", &operador);
+
+    printf("Digite o segundo operando: ");
+    scanf("%f", &num2);
+
+    // Verifica se a operação é válida
+    if ((operador == '/' || operador == '%') && num2 == 0) {
+        printf("Erro: Tentativa de divisão por zero.\n");
+        return 1; // Saída com erro
+    }
+
+    // Realiza a operação e exibe o resultado
+    switch (operador) {
+        case '+':
+            resultado = num1 + num2;
             break;
-        case 2:
-            printf("\n terca \n");
+        case '-':
+            resultado = num1 - num2;
             break;
-        case 3:
-            printf("\n quarta \n");
+        case '*':
+            resultado = num1 * num2;
             break;
-        case 4:
-            printf("\n quinta \n");
-            break;
-        case 5:
-            printf("\n sexta \n");
-            break;
-        case 6:
-            printf("\n sabado \n");
-            break;
-        case 7:
-            printf("\n domingo \n");
-            break;
-        case 8:
-            printf("\n segunda \n");
-            break;
-        case 9:
-            printf("\n terca \n");
-            break;
-        case 10:
-            printf("\n quarta \n");
-            break;
-        case 11:
-            printf("\n quinta \n");
-            break;
-        case 12:
-            printf("\n sexta \n");
-            break;
-        case 13:
-            printf("\n sabado \n");
-            break;
-        case 14:
-            printf("\n domingo \n");
-            break;
-        case 15:
-            printf("\n segunda \n");
-            break;
-        case 16:
-            printf("\n terca \n");
-            break;
-        case 17:
-            printf("\n quarta \n");
-            break;
-        case 18:
-            printf("\n quinta \n");
-            break;
-        case 19:
-            printf("\n sexta \n");
-            break;
-        case 20:
-            printf("\n sabado \n");
-            break;
-        case 21:
-            printf("\n domingo \n");
-            break;
-        case 22:
-            printf("\n segunda \n");
-            break;
-        case 23:
-            printf("\n terca \n");
-            break;
-        case 24:#include<stdio.h>
-int main () {
-	
-	int num1;
-	
-	printf("\n digite qual dia e hoje \n");
-	scanf("%i", &num1);
-	
-	switch (num1) {
-        case 1:
-            printf("\n segunda \n");
-            break;
-        case 2:
-            printf("\n terca \n");
-            break;
-        case 3:
-            printf("\n quarta \n");
-            break;
-        case 4:
-            printf("\n quinta \n");
-            break;
-        case 5:
-            printf("\n sexta \n");
-            break;
-        case 6:
-            printf("\n sabado \n");
-            break;
-        case 7:
-            printf("\n domingo \n");
-            break;
-        case 8:
-            printf("\n segunda \n");
-            break;
-        case 9:
-            printf("\n terca \n");
-            break;
-        case 10:
-            printf("\n quarta \n");
-            break;
-        case 11:
-            printf("\n quinta \n");
-            break;
-        case 12:
-            printf("\n sexta \n");
-            break;
-        case 13:
-            printf("\n sabado \n");
-            break;
-        case 14:
-            printf("\n domingo \n");
-            break;
-        case 15:
-            printf("\n segunda \n");
-            break;
-        case 16:
-            printf("\n terca \n");
-            break;
-        case 17:
-            printf("\n quarta \n");
-            break;
-        case 18:
-            printf("\n quinta \n");
-            break;
-        case 19:
-            printf("\n sexta \n");
-            break;
-        case 20:
-            printf("\n sabado \n");
-            break;
-        case 21:
-            printf("\n domingo \n");
-            break;
-        case 22:
-            printf("\n segunda \n");
-            break;
-        case 23:
-            printf("\n terca \n");
-            break;
-        case 24:
-            printf("\n quarta \n");
-            break;
-        case 25:
-            printf("\n quinta \n");
-            break;
-        case 26:
-            printf("\n sexta \n");
-            break;
-        case 27:
-            printf("\n sabado \n");
-            break;
-        case 28:
-            printf("\n domingo \n");
-            break;
-        case 29:
-            printf("\n segunda \n");
-            break;
-        case 30:
-            printf("\n terca \n");
+        case '/':
+            resultado = num1 / num2;
             break;
         default:
-        	printf(" valor invalido \n");
-		}
-		
- return 0;		
-}#include<stdio.h>
-int main () {
-	
-	int num1;
-	
-	printf("\n digite qual dia e hoje \n");
-	scanf("%i", &num1);
-	
-	switch (num1) {
-        case 1:
-            printf("\n segunda \n");
-            break;
-        case 2:
-            printf("\n terca \n");
-            break;
-        case 3:
-            printf("\n quarta \n");
-            break;
-        case 4:
-            printf("\n quinta \n");
-            break;
-        case 5:
-            printf("\n sexta \n");
-            break;
-        case 6:
-            printf("\n sabado \n");
-            break;
-        case 7:
-            printf("\n domingo \n");
-            break;
-        case 8:
-            printf("\n segunda \n");
-            break;
-        case 9:
-            printf("\n terca \n");
-            break;
-        case 10:
-            printf("\n quarta \n");
-            break;
-        case 11:
-            printf("\n quinta \n");
-            break;
-        case 12:
-            printf("\n sexta \n");
-            break;
-        case 13:
-            printf("\n sabado \n");
-            break;
-        case 14:
-            printf("\n domingo \n");
-            break;
-        case 15:
-            printf("\n segunda \n");
-            break;
-        case 16:
-            printf("\n terca \n");
-            break;
-        case 17:
-            printf("\n quarta \n");
-            break;
-        case 18:
-            printf("\n quinta \n");
-            break;
-        case 19:
-            printf("\n sexta \n");
-            break;
-        case 20:
-            printf("\n sabado \n");
-            break;
-        case 21:
-            printf("\n domingo \n");
-            break;
-        case 22:
-            printf("\n segunda \n");
-            break;
-        case 23:
-            printf("\n terca \n");
-            break;
-        case 24:
-            printf("\n quarta \n");
-            break;
-        case 25:
-            printf("\n quinta \n");
-            break;
-        case 26:
-            printf("\n sexta \n");
-            break;
-        case 27:
-            printf("\n sabado \n");
-            break;
-        case 28:
-            printf("\n domingo \n");
-            break;
-        case 29:
-            printf("\n segunda \n");
-            break;
-        case 30:
-            printf("\n terca \n");
-            break;
-        default:
-        	printf(" valor invalido \n");
-		}
-		
- return 0;		
+            printf("Erro: Operador inválido.\n");
+            return 1; // Saída com erro
+    }
+
+    // Exibe a entrada e o resultado
+    printf("Entrada: %.2f %c %.2f\n", num1, operador, num2);
+    printf("Resultado: %.2f\n", resultado);
+
+    return 0; // Saída sem erros
+}
